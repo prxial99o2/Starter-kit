@@ -10,7 +10,7 @@ Please provide the YouTube link to your [Video Demo](https://youtube.com).
 
 List all the features completed.
 
-1. allow user to enter rows and columns
+1. allow user to change rows and columns
 
 ### To Do
 
