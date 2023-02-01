@@ -19,6 +19,7 @@ List all the features not yet done. Remove this section if there is no incomplet
 1. function for all game objects
 2. command line
 3. allow user to change the number of zombies
+4. game save function
 
 ## Additional Features
 
