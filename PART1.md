@@ -45,3 +45,4 @@ List down the contribution of each group members.
 
 Describe the problems encountered and provide the solutions / plan for the solutions.
 1. facing problem passing parameters to the main fuction , maybe will change to use class to do
+2. game object doesn't know how to do
