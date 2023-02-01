@@ -2,7 +2,7 @@
 
 Alien vs. Zombie is a game that is full of aliens and obstacles. Player are required to defeat your enemies by cleverly navigating the aliens on a path to destroy the invading robots. Every move counts, so players need quick thining skills and navigation skills to defeat your enemies!
 
-Please provide the YouTube link to your [Video Demo](https://youtube.com).
+Please provide the YouTube link to your [Video Demo](https://youtu.be/K-8PcmFychk).
 
 ## Compilation Instructions
 
