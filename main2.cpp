@@ -213,7 +213,7 @@ int main()
     // return 0;
     cout << " Row =5 " << endl;
     cout << "Colunm =15 " << endl;
-    cout << "Change setting ?(Y/N)" << endl;
+    cout << "Change setting ?(Y/N) :" ;
     cin >> input;
     if (input == "N" || input == "n")
     {
