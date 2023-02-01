@@ -1,16 +1,16 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include <cstdlib> // for system()
-#include <ctime>   // for time() in srand( time(NULL) );
-#include <iomanip> // for setw()
+#include <cstdlib> 
+#include <ctime>   
+#include <iomanip> 
 using namespace std;
 
 class Gameboard
 {
 private:
-    vector<vector<char>> map_; // convention to put trailing underscore
-    int dimX_, dimY_;          // to indicate private data
+    vector<vector<char>> map_; 
+    int dimX_, dimY_;          
 public:
     Gameboard(int dimX , int dimY );
     //Gameboard(int dimX = 15, int dimY = 5);
@@ -28,14 +28,11 @@ void Gameboard::init(int dimX, int dimY)
     dimY_ = dimY;
     char objects[] = {' ', ' ', ' ', ' ', ' ', ' ', 'A', 'P', 'R', '.'};  //still no fuction
     int noOfObjects = 10; // number of objects in the objects array
-    //int objNo= rand() % noOfObjects;    //new line
-    // create dynamic 2D array using vector
-    map_.resize(dimY_); // create empty rows
+    map_.resize(dimY_); 
     for (int i = 0; i < dimY_; ++i)
     {
-        map_[i].resize(dimX_); // resize each row
+        map_[i].resize(dimX_); 
     }
-    // put random characters into the vector array
     for (int i = 0; i < dimY_; ++i)
     {
         for (int j = 0; j < dimX_; ++j)
