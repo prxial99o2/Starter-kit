@@ -1,3 +1,13 @@
+// ********************************************************* 
+// Course: TCP1101 PROGRAMMING FUNDAMENTALS 
+// Year: Trimester 1, 2022/23 (T2215) 
+// Lab: TT9L 
+// Names: Tan Xin Thong | Lee Jia Ying 
+// IDs: 1211104274 | 1221303972 
+// Emails: 1211104274@student.mmu.edu.my | 1221303972@student.mmu.edu.my 
+// Phones: 016-3862008 | 011-26418191 
+// *********************************************************
+
 #include <iostream>
 #include <string>
 #include <vector>
