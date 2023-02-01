@@ -1,8 +1,6 @@
 # Alien vs. Zombie
 
-Please introduce the game here.
-
-You may add one signature screenshot of your program here or above the title. Check out [this tutorial](https://www.digitalocean.com/community/tutorials/markdown-markdown-images) to learn how to do it.
+Alien vs. Zombie is a game that full of aliens and obstacles. Player are required to defeat your enemies by cleverly navigating the aliens on a path to destroy the invading robots. Every move counts, so player need a quick thining skills and navigation skills to defeat your enemies!
 
 Please provide the YouTube link to your [Video Demo](https://youtube.com).
 
@@ -10,6 +8,7 @@ Please provide the YouTube link to your [Video Demo](https://youtube.com).
 
 Provide instructions on how to compile your program, especially when it is non-trivial.
 
+For main2.cpp:
 
 ```
 click the debug C/C++ icon then run
@@ -17,9 +16,7 @@ click the debug C/C++ icon then run
 
 ## User Manual
 
-Please provide the user manual on how to use your program.
-
-Please DO NOT change the Progress Log below. Leave it as it is.
+On the comand line just type up, down, left ,right to cantrol the path to defeat the enemies.
 
 ## Progress Log
 
