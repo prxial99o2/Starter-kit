@@ -27,7 +27,6 @@ Describe the additional features that has been implemented.
 
 List down the contribution of each group members.
 
-For example:
 
 ### Tan Xin Thong
 
