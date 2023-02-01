@@ -104,32 +104,134 @@ void Gameboard::display() const
          << endl;
 }
 
-
-
-void test1_1(int dimX, int dimY)
+void Gameboardtest1_1(int dimX, int dimY)
 {
     Gameboard gameboard(dimX, dimY);
     gameboard.display();
 }
 
+class OriginalGameboard
+{
+private:
+    vector<vector<char>> map_;
+    int OridimX_, OridimY_;
+
+public:
+    OriginalGameboard(int OridimX = 15, int OridimY = 5);
+    void init(int OridimX, int OridimY);
+    void display() const;
+};
+
+OriginalGameboard::OriginalGameboard(int OridimX, int OridimY)
+{
+    init(OridimX, OridimY);
+}
+
+void OriginalGameboard::init(int OridimX, int OridimY)
+{
+    OridimX_ = OridimX;
+    OridimY_ = OridimY;
+    char objects2[] = {' ', ' ', ' ', ' ', ' ', ' ', 'A', 'P', 'R', '.'};
+    int noofobjects2 = 10;
+    map_.resize(OridimY_);
+    for (int i = 0; i < OridimY_; ++i)
+    {
+        map_[i].resize(OridimX_);
+    }
+    for (int i = 0; i < OridimY_; ++i)
+    {
+        for (int j = 0; j < OridimX_; ++j)
+        {
+            int objno2 = rand() % noofobjects2;
+            map_[i][j] = objects2[objno2];
+        }
+    }
+}
+
+void OriginalGameboard ::display() const
+{
+    for (int i = 0; i < OridimY_; ++i)
+    {
+        cout << " ";
+        for (int j = 0; j < OridimX_; ++j)
+        {
+            cout << "+-";
+        }
+        cout << "+" << endl;
+        cout << setw(2) << (OridimY_ - i);
+        for (int j = 0; j < OridimX_; ++j)
+        {
+            cout << "|" << map_[i][j];
+        }
+        cout << "|" << endl;
+    }
+    cout << " ";
+    for (int j = 0; j < OridimX_; ++j)
+    {
+        cout << "+-";
+    }
+    cout << "+" << endl;
+    cout << " ";
+    for (int j = 0; j < OridimX_; ++j)
+    {
+        int digit = (j + 1) / 10;
+        cout << " ";
+        if (digit == 0)
+            cout << " ";
+        else
+            cout << digit;
+    }
+    cout << endl;
+    cout << " ";
+    for (int j = 0; j < OridimX_; ++j)
+    {
+        cout << " " << (j + 1) % 10;
+    }
+    cout << endl
+         << endl;
+}
 
 
 int main()
 {
     int dimX;
     int dimY;
+    int OridimX;
+    int OridimY;
+    char Y;
+    char y;
+    char N;
+    char n;
+    string input;
     cout << "Let's Get Started!" << endl;
     cout << " --__--__--__--__--__--__--__--_" << endl;
     cout << " =     Welcome To Alien Path!   =" << endl;
-    cout << " __--__--__--__--__--__--__--__-" << endl; 
+    cout << " __--__--__--__--__--__--__--__-" << endl;
     // std::cout << "Press enter to continue...." << std::endl;
     // std::cin.ignore();
     // std::system("pause");
-    //return 0;
-    cout << "Enter row:";
-    cin>> dimY;
-    cout <<"Enter column:";
-    cin>>dimX;
-    srand(time(NULL));;
-    test1_1(dimX,dimY);
+    // return 0;
+    cout << " Row =5 " << endl;
+    cout << "Colunm =15 " << endl;
+    cout << "Change setting ?(Y/N)" << endl;
+    cin >> input;
+    if (input == "N" || input == "n")
+    {
+        OriginalGameboard originalBoard;
+        originalBoard.display();
+    }
+    else if (input == "Y" || input == "y")
+    {
+        cout << "Enter row:";
+        cin >> dimY;
+        cout << "Enter column:";
+        cin >> dimX;
+        srand(time(NULL));
+        ;
+        Gameboardtest1_1(dimX, dimY);
+    }
+    else
+    {
+        cout << "invalid input" << endl;
+    }
 }
