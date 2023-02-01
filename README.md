@@ -10,10 +10,9 @@ Please provide the YouTube link to your [Video Demo](https://youtube.com).
 
 Provide instructions on how to compile your program, especially when it is non-trivial.
 
-For example:
 
 ```
-g++ main.cpp folder1\code.cpp folder2\code.cpp ......
+click the debug C/C++ icon then run
 ```
 
 ## User Manual
